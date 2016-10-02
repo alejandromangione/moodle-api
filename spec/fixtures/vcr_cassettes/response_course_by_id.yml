@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://someurlmoodle.com/webservice/rest/server.php
+    body:
+      encoding: UTF-8
+      string: wstoken=token&moodlewsrestformat=json&wsfunction=core_course_get_courses&options%5Bids%5D%5B0%5D=5
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.0 (darwin15.5.0 x86_64) ruby/2.3.1p112
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - someurlmoodle.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.1
+      Date:
+      - Sun, 02 Oct 2016 17:52:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private, must-revalidate, pre-check=0, post-check=0, max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Accept-Ranges:
+      - none
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '[{"id":5,"shortname":"Visita\u00e7\u00e3o M\u00e9dica Empresarial","categoryid":1,"categorysortorder":10001,"fullname":"Curso
+        Visita\u00e7\u00e3o M\u00e9dica - Empresarial","idnumber":"","summary":"<p><span><img
+        src=\"http:\/\/cursos.repfarmaead.com\/webservice\/pluginfile.php\/330\/course\/summary\/0\/imagem-curso-visitacao.jpg\"
+        width=\"220\" height=\"147\" alt=\"Visitacao-Medica\" style=\"margin:5px 10px;float:left;\"
+        \/>O curso Visita\u00e7\u00e3o M\u00e9dica foi desenvolvido para quem quer
+        ingressar na ind\u00fastria farmac\u00eautica como representante, ou propagandista
+        como tamb\u00e9m \u00e9 conhecido. Trata-se de uma profiss\u00e3o em constante
+        evolu\u00e7\u00e3o que exige apurado conte\u00fado t\u00e9cnico e comportamental.
+        Esse curso ser\u00e1 um diferencial importante na sua carreira. <br \/> Sucesso
+        e conte conosco para tirar d\u00favidas.<\/span><\/p>\r\n<p><\/p>\r\n<p style=\"text-align:right;color:#2b6399;\"><a
+        href=\"http:\/\/cursos.repfarmaead.com\/course\/view.php?id=5\" style=\"text-align:right;color:#2b6399;\">INICIAR
+        CURSO <span class=\"icon-arrow-right\"><\/span><\/a><\/p>","summaryformat":1,"format":"topics","showgrades":1,"newsitems":5,"startdate":1455505200,"numsections":14,"maxbytes":0,"showreports":1,"visible":1,"hiddensections":0,"groupmode":0,"groupmodeforce":0,"defaultgroupingid":0,"timecreated":1455462860,"timemodified":1460379344,"enablecompletion":1,"completionnotify":0,"lang":"","forcetheme":"","courseformatoptions":[{"name":"numsections","value":14},{"name":"hiddensections","value":0},{"name":"coursedisplay","value":0}]}]'
+    http_version: 
+  recorded_at: Sun, 02 Oct 2016 17:52:38 GMT
+recorded_with: VCR 3.0.3
