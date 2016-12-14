@@ -19,7 +19,7 @@ $ bundle
 Or install it yourself as:
 
 ```
-$ gem install moodle-api, git: 'git://github.com/alejandromangione/moodle-api.git', branch: 'master'
+$ gem install moodle-api -s http://github.com/alejandromangione/moodle-api
 ```
 
 ## Usage
