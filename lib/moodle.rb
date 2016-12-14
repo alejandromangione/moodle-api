@@ -7,6 +7,10 @@ module Moodle
 
     class << self; attr_accessor :mdl_url, :mdl_token, :mdl_first_password ; end
 
+    def self.setup
+      yield self
+    end
+
     def self.course_by_id(id)
       response = RestClient.post @mdl_url + "/webservice/rest/server.php", {
         'wstoken': @mdl_token,
