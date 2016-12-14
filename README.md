@@ -30,6 +30,20 @@ Moodle::Connector.mdl_token = "token"
 Moodle::Connector.course_by_id(5)
 ```
 
+## Configuration
+
+Create a file `config/initializers/moodle_api.rb` and add a configuration block like:
+
+```
+require 'moodle'
+
+Moodle::Connector.setup do |config|
+  config.mdl_url = 'http://urlmoodle.com'
+  config.mdl_token = 'token'
+  config.mdl_first_password = 'P@ssword123'
+end
+```
+
 
 ## To do
 - Need implement other methods
