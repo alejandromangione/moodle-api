@@ -115,7 +115,7 @@ module Moodle
           'moodlewsrestformat': 'json',
           'wsfunction': 'core_user_update_users',
           'users[0][id]': user_mdl_id,
-          'users[0][password]': 'ieaa',
+          'users[0][password]': @mdl_first_password,
           'users[0][preferences][0][type]': 'auth_forcepasswordchange',
           'users[0][preferences][0][value]': 'true'
         }
