@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://someurlmoodle.com/login/token.php?password=pass&service=service&username=user
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.6.0 x86_64) ruby/2.5.1p57
+      Host:
+      - someurlmoodle.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Jul 2018 08:04:54 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      - post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 20 Aug 1969 09:23:00 GMT
+      Last-Modified:
+      - Tue, 31 Jul 2018 08:04:54 GMT
+      Accept-Ranges:
+      - none
+      Content-Length:
+      - '64'
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"token":"e210e15c0033dcf24c3022dc8d6fe5f3","privatetoken":null}'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2018 08:04:55 GMT
+recorded_with: VCR 4.0.0

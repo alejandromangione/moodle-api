@@ -16,4 +16,13 @@ RSpec.describe "Moodle" do
     end
   end
 
+  it 'should valid token' do
+    VCR.use_cassette('get_token_valid') do
+      response = Moodle::Connector.get_token("user", "pass", "service")
+
+      expect(response).to be_a Hash
+      expect(response[:valid]).to eq(true)
+    end
+  end
+
 end

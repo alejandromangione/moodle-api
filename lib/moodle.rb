@@ -131,7 +131,15 @@ module Moodle
         }
 
       return !( ["wrongusernamepassword", "missingpassword"].any? { |errorcode| response.body.include? errorcode } )
+    end
 
+    def self.get_token(username, password, service)
+      response = RestClient.get("#{@mdl_url}/login/token.php?service=seller&username=#{username}&password=#{password}&service=#{service}")
+
+      body_parsed = JSON.parse(response)
+      valid = (body_parsed.keys.any? "token") && !(body_parsed.keys.any? "errorcode")
+
+      return { token: body_parsed["token"], valid: valid }
 
     end
 

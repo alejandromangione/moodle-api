@@ -4,9 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "moodle-api"
-  spec.version       = "1.2.0"
+  spec.version       = "1.3.0"
   spec.authors       = ["Alejandro Mangione"]
-  spec.email         = ["alejandro.mangione@gmail.com"]
+  spec.email         = ["me@mangione.cc"]
   spec.summary       = %q{Ruby client for Moodle API.}
   spec.description   = %q{Ruby client for Moodle API.}
   spec.homepage      = ""
