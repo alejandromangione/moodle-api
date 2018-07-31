@@ -1,10 +1,10 @@
 # Moodle API
 
-Gem to connect on Moodle API
+Gem to connect on Moodle Rest API
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line in your application's Gemfile:
 
 ```
 gem 'moodle-api', git: 'git://github.com/alejandromangione/moodle-api.git', branch: 'master'
@@ -30,7 +30,7 @@ Moodle::Connector.mdl_token = "token"
 Moodle::Connector.course_by_id(5)
 ```
 
-## Configuration
+## Configuration in Rails Project
 
 Create a file `config/initializers/moodle_api.rb` and add a configuration block like:
 
@@ -57,12 +57,17 @@ end
 | get_courses | void |
 | reset_password | reset_password (String) |
 | valid_user? | username (String), password (String) |
-
+| get_token | username (String), password (String), service (String) |
 
 
 ## To do
-- Need implement other methods
-- Add more tests
+
+- Need implement other methods (https://docs.moodle.org/dev/Web_service_API_functions)
+- Add more specs
+- Improve documentation
+- Implement generator
+- Publish Gem
+
 
 ## Contributing
 
